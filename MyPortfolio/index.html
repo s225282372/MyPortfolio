@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molele Glen - Software Engineer Portfolio</title>
+    <title>Glen Molele - Software Engineer Portfolio</title>
     <meta name="description" content="Final-year Software Engineering student driven by passion for crafting smart, user-focused software that addresses real-world challenges through innovative technology solutions.">
     
     <!-- Fonts -->
@@ -19,563 +19,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background -->
-    <div class="bg-canvas"></div>
-    <div class="stars" id="stars"></div>
-
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">MG</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - PHASE 1 -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <!-- Left Side: Text Content -->
             <div class="hero-text fade-in">
                 <h1>
-                    <span class="gradient-text">Software</span><br>
-                    <span>Engineer</span>
+                    Full Stack<br>
+                    <span class="gradient-text">Developer</span>
                 </h1>
                 <div class="typing-container">
                     <span id="typingText"></span>
-                    <span class="cursor">|</span>
                 </div>
                 <p class="hero-description">
-                    Final-year Software Engineering student driven by passion for crafting smart,
-                    user-focused software that addresses real-world challenges through innovative
-                    technology solutions.
+                    Final-year Software Engineering student at Nelson Mandela University, 
+                    passionate about crafting innovative solutions through full-stack development, 
+                    generative AI, and cloud technologies.
                 </p>
+                
+                <!-- Tech Stack Pills - ABOVE BUTTONS -->
+                <div class="tech-pills">
+                    <span class="tech-pill">C#</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">SQL</span>
+                    <span class="tech-pill">AWS</span>
+                </div>
+                
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
-                        View My Work <i class="fas fa-arrow-right"></i>
-                    </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        Let's Connect <i class="fas fa-paper-plane"></i>
-                    </button>
+                    <a href="#portfolio" class="btn btn-primary">
+                        Projects <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-            </div>
-
-            <div class="hero-card fade-in">
-                <div class="card-3d">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h4>3+</h4>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>15+</h4>
-                            <p>Projects</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>100%</h4>
-                            <p>Dedication</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>AI/ML</h4>
-                            <p>Enthusiast</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="section-header fade-in">
-            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">
-                Passionate about building innovative solutions and continuously learning emerging technologies
-            </p>
-        </div>
-        
-        <div class="about-content fade-in">
-            <div class="about-text">
-                <h3>Building the Future, One Line at a Time</h3>
                 
-                <p>My journey has equipped me with a solid foundation in programming, web development, and automation, while sparking a deep curiosity for emerging fields like generative AI and machine learning.</p>
-                
-                <p>Along the way, I've gained hands-on experience building both static and dynamic web applications and contributed to open-source projects that sharpened my skills.</p>
-                
-                <div class="journey-stats">
-                    <div class="journey-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>Education</h4>
-                        <p>Nelson Mandela University</p>
-                    </div>
-                    <div class="journey-item">
-                        <i class="fas fa-code-branch"></i>
-                        <h4>Open Source</h4>
-                        <p>Active Contributor</p>
-                    </div>
-                    <div class="journey-item">
-                        <i class="fas fa-brain"></i>
-                        <h4>AI/ML</h4>
-                        <p>Deep Learning Enthusiast</p>
-                    </div>
+                <!-- Social Links -->
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/glen-molele-214b90227" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/realglenh_/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
+            </div>
+
+            <!-- Right Side: Hero Image -->
+            <div class="hero-visual fade-in">
+                <img src="Images/hero sect.png" alt="Developer Workspace" class="hero-image">
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-header fade-in">
-            <h2 class="section-title"><span class="gradient-text">Tech Toolbox</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Technologies and tools I work with</p>
-        </div>
-
-        <h3 class="tech-category fade-in"><i class="fas fa-code"></i> Core Technologies</h3>
-        <div class="tech-grid">
-            <div class="tech-item fade-in" style="animation-delay: 0.1s">
-                <i class="devicon-csharp-plain colored"></i>
-                <span>C#</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.2s">
-                <i class="devicon-javascript-plain colored"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.3s">
-                <i class="devicon-react-original colored"></i>
-                <span>React</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.4s">
-                <i class="devicon-python-plain colored"></i>
-                <span>Python</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.5s">
-                <i class="devicon-html5-plain colored"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.6s">
-                <i class="devicon-css3-plain colored"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.7s">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <span>Bootstrap</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.8s">
-                <i class="devicon-dotnetcore-plain colored"></i>
-                <span>.NET</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 0.9s">
-                <i class="devicon-mysql-plain colored"></i>
-                <span>MySQL</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 1s">
-                <i class="devicon-nodejs-plain colored"></i>
-                <span>Node.js</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 1.1s">
-                <i class="devicon-git-plain colored"></i>
-                <span>Git</span>
-            </div>
-            <div class="tech-item fade-in" style="animation-delay: 1.2s">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
-            </div>
-        </div>
-
-        <h3 class="tech-category fade-in" style="margin-top: 3rem;"><i class="fas fa-telescope"></i> Exploring</h3>
-        <div class="tech-grid exploring-grid">
-            <div class="tech-item fade-in">
-                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                <span>AWS</span>
-            </div>
-            <div class="tech-item fade-in">
-                <i class="devicon-kubernetes-plain colored"></i>
-                <span>Kubernetes</span>
-            </div>
-            <div class="tech-item fade-in">
-                <i class="devicon-docker-plain colored"></i>
-                <span>Docker</span>
-            </div>
-        </div>
+    <!-- Placeholder sections for future phases -->
+    <section id="about" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <h2 style="font-size: 3rem; opacity: 0.3;">About Section - Coming in Phase 2</h2>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-header fade-in">
-            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Some of my recent work and contributions</p>
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Student Task Management System" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Student Task Management System</h3>
-                    <p>An Android application designed to streamline task and module management for academic environments. Features different user roles and comprehensive task tracking.</p>
-                    <div class="project-tags">
-                        <span class="tag">Android</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">SQLite</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Guessing Game GUI" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Guessing Game GUI (Tkinter)</h3>
-                    <p>A fun number guessing game built with Python Tkinter featuring an intuitive GUI and interactive gameplay elements.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Tkinter</span>
-                        <span class="tag">GUI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop" alt="ASP.NET Ticketing System" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>ASP.NET Ticketing System</h3>
-                    <p>A C# console-based ticketing system showcasing real-world application of software design patterns by simulating ticket purchases and analytics.</p>
-                    <div class="project-tags">
-                        <span class="tag">C#</span>
-                        <span class="tag">ASP.NET</span>
-                        <span class="tag">Console App</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop" alt="Web Applications" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Dynamic Web Applications</h3>
-                    <p>Collection of responsive web applications built with modern frameworks, featuring interactive UIs and seamless user experiences.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop" alt="Network Automation" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Network Automation Tools</h3>
-                    <p>Automated network configuration and monitoring solutions using Cisco Packet Tracer with advanced security analysis capabilities.</p>
-                    <div class="project-tags">
-                        <span class="tag">Cisco Packet Tracer</span>
-                        <span class="tag">Networking</span>
-                        <span class="tag">Automation</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500&h=300&fit=crop" alt="Open Source Contributions" class="project-image">
-                    <div class="project-overlay">
-                        <div class="overlay-content">
-                            <i class="fas fa-eye"></i>
-                            <p>View Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Open Source Contributions</h3>
-                    <p>Active contributions to open-source projects focusing on developer tools and educational resources for emerging technologies.</p>
-                    <div class="project-tags">
-                        <span class="tag">GitHub</span>
-                        <span class="tag">Documentation</span>
-                        <span class="tag">Community</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="portfolio" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <h2 style="font-size: 3rem; opacity: 0.3;">Portfolio Section - Coming in Phase 3</h2>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="section-header fade-in">
-            <h2 class="section-title"><span class="gradient-text">Experience & Education</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">My academic journey and professional growth</p>
-        </div>
-        
-        <div class="timeline">
-            <div class="timeline-line"></div>
-            
-            <div class="timeline-item left fade-in">
-                <div class="timeline-content">
-                    <div class="timeline-date">2021 - Present</div>
-                    <h3>Bachelor of Information Technology</h3>
-                    <h4>Nelson Mandela University</h4>
-                    <p>Specialized in software development, algorithms, and emerging technologies. Strong focus on practical applications and industry-relevant projects.</p>
-                    <div class="timeline-tags">
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Algorithms</span>
-                        <span class="tag">Machine Learning</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item right fade-in">
-                <div class="timeline-content">
-                    <div class="timeline-date">2023 - Present</div>
-                    <h3>Open Source Contributor</h3>
-                    <h4>Various Projects</h4>
-                    <p>Active contributor to open-source projects, focusing on developer tools and educational resources for emerging technologies.</p>
-                    <div class="timeline-tags">
-                        <span class="tag">GitHub</span>
-                        <span class="tag">Documentation</span>
-                        <span class="tag">Community</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item left fade-in">
-                <div class="timeline-content">
-                    <div class="timeline-date">2021 - 2023</div>
-                    <h3>Professional Certifications</h3>
-                    <h4>Industry Recognized</h4>
-                    <p>Internet of Things • Cybersecurity • Artificial Intelligence certifications from Cisco and other industry leaders.</p>
-                    <div class="timeline-tags">
-                        <span class="tag">IoT</span>
-                        <span class="tag">Cybersecurity</span>
-                        <span class="tag">AI/ML</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item right fade-in">
-                <div class="timeline-content">
-                    <div class="timeline-date">2016</div>
-                    <h3>High School Graduate</h3>
-                    <h4>Tema Secondary School</h4>
-                    <p>Best Math Performer Certificate • Chemistry Club President • Position 1 Marathon Medal</p>
-                    <div class="timeline-tags">
-                        <span class="tag">Mathematics</span>
-                        <span class="tag">Leadership</span>
-                        <span class="tag">Athletics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="experience" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <h2 style="font-size: 3rem; opacity: 0.3;">Experience Section - Coming in Phase 7</h2>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="section-header fade-in">
-            <h2 class="section-title"><span class="gradient-text">Let's Connect</span></h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Ready to collaborate on your next project?</p>
-        </div>
-
-        <div class="contact-content">
-            <div class="contact-info fade-in">
-                <h3 style="margin-bottom: 2rem;">Get In Touch</h3>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <p>Email</p>
-                        <span>maselaeloglen27@gmail.com</span>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <p>Phone</p>
-                        <span>+227 187 0050</span>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <p>Location</p>
-                        <span>Polokwane, Werden-B, South Africa</span>
-                    </div>
-                </div>
-
-                <div class="social-section">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/glen-molele-214b90227" class="social-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com" class="social-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/maselaelo.molele.31" class="social-link" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/realglenh_/" class="social-link" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@Maselaelo_Glen" class="social-link" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form fade-in" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-full">
-                    <span class="btn-text">Send Message</span>
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </form>
-        </div>
+    <section id="contact" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <h2 style="font-size: 3rem; opacity: 0.3;">Contact Section - Coming in Phase 8</h2>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Molele Glen. Designed with passion for innovation.</p>
-            <p class="footer-sub">Built with modern web technologies and best practices.</p>
-            
-            <div class="footer-links">
-                <a href="#home" class="footer-link">Home</a>
-                <a href="#about" class="footer-link">About</a>
-                <a href="#skills" class="footer-link">Skills</a>
-                <a href="#projects" class="footer-link">Projects</a>
-                <a href="#contact" class="footer-link">Contact</a>
-            </div>
-        </div>
-    </footer>
 
     <!-- Custom JavaScript -->
     <script src="main.js"></script>
