@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glen Molele - Software Engineer Portfolio</title>
-    <meta name="description" content="Final-year Software Engineering student driven by passion for crafting smart, user-focused software that addresses real-world challenges through innovative technology solutions.">
-    
+    <meta name="description"
+        content="Final-year Software Engineering student driven by passion for crafting smart, user-focused software that addresses real-world challenges through innovative technology solutions.">
+
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
@@ -45,19 +49,19 @@
                     <span id="typingText"></span>
                 </div>
                 <p class="hero-description">
-                    Final-year Software Engineering student at Nelson Mandela University, 
-                    passionate about crafting innovative solutions through full-stack development, 
+                    Final-year Software Engineering student at Nelson Mandela University,
+                    passionate about crafting innovative solutions through full-stack development,
                     generative AI, and cloud technologies.
                 </p>
-                
-                <!-- Tech Stack Pills - ABOVE BUTTONS -->
+
+                <!-- Tech Stack Pills -->
                 <div class="tech-pills">
                     <span class="tech-pill">C#</span>
                     <span class="tech-pill">React</span>
                     <span class="tech-pill">SQL</span>
                     <span class="tech-pill">AWS</span>
                 </div>
-                
+
                 <div class="hero-buttons">
                     <a href="#portfolio" class="btn btn-primary">
                         Projects <i class="fas fa-external-link-alt"></i>
@@ -66,7 +70,7 @@
                         Contact <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-                
+
                 <!-- Social Links -->
                 <div class="hero-social">
                     <a href="https://github.com" target="_blank" class="social-icon">
@@ -89,9 +93,73 @@
     </section>
 
     <!-- Placeholder sections for future phases -->
-    <section id="about" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <h2 style="font-size: 3rem; opacity: 0.3;">About Section - Coming in Phase 2</h2>
+    <!-- About Section - PHASE 2 -->
+    <section id="about" class="about-section">
+        <div class="section-header fade-in">
+            <h2 class="section-title"> "Get to Know Me 🫡" </h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="about-container">
+            <!-- Stats Cards - Left Side -->
+            <div class="stats-container fade-in">
+                <a href="#portfolio" class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>15 +</h3>
+                    <p class="stat-title">Projects</p>
+                    <p class="stat-subtitle">Built & Deployed</p>
+                    <i class="fas fa-arrow-right stat-arrow"></i>
+                </a>
+
+                <a href="#portfolio" class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>11 +</h3>
+                    <p class="stat-title">Certifications</p>
+                    <p class="stat-subtitle">AWS, AI/ML, DevOps</p>
+                    <i class="fas fa-arrow-right stat-arrow"></i>
+                </a>
+
+                <a href="#experience" class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>3 +</h3>
+                    <p class="stat-title">Years</p>
+                    <p class="stat-subtitle">Coding Experience</p>
+                    <i class="fas fa-arrow-right stat-arrow"></i>
+                </a>
+            </div>
+
+            <!-- About Text - Right Side -->
+            <div class="about-text fade-in">
+                <p>
+                    I'm <strong>Glen Molele</strong>, a final-year Software Engineering student at Nelson Mandela
+                    University
+                    with a strong foundation in backend and full-stack web development. I specialize in building
+                    scalable,
+                    efficient applications using <strong>C#, ASP.NET, React, JavaScript, Python</strong>, and
+                    <strong>SQL databases</strong>,
+                    with hands-on experience delivering both web and mobile solutions.
+                </p>
+
+                <p>
+                    My approach centers on writing clean, maintainable code and solving real-world problems through
+                    technology.
+                    I've contributed to open-source projects, earned multiple certifications in <strong>AWS, AI/ML, and
+                        DevOps</strong>,
+                    and continuously expand my skill set in modern software design patterns and cloud-native
+                    architectures.
+                    Currently exploring <strong>clean architecture, AWS, Docker, and Kubernetes</strong> to build
+                    production-ready solutions.
+                </p>
+            </div>
+        </div>
     </section>
+
 
     <section id="portfolio" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
         <h2 style="font-size: 3rem; opacity: 0.3;">Portfolio Section - Coming in Phase 3</h2>
@@ -108,4 +176,5 @@
     <!-- Custom JavaScript -->
     <script src="main.js"></script>
 </body>
+
 </html>
