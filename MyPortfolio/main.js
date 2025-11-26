@@ -189,9 +189,6 @@ function showProjectDetail(projectId) {
     // Show the specific project detail
     const detailView = document.getElementById(projectId + '-detail');
     detailView.classList.add('active');
-    
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function hideProjectDetail() {
@@ -204,11 +201,5 @@ function hideProjectDetail() {
     const projectsGrid = document.getElementById('projectsGrid');
     if (projectsGrid) {
         projectsGrid.style.display = 'grid';
-    }
-    
-    // Scroll to portfolio section
-    const portfolioSection = document.getElementById('portfolio');
-    if (portfolioSection) {
-        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
