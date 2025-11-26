@@ -142,3 +142,73 @@ window.addEventListener('load', () => {
         });
     }, 300);
 });
+
+// ========================================
+// PORTFOLIO TAB SWITCHING - PHASE 3
+// ========================================
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Show corresponding content
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+        
+        // Reset to project grid view when switching tabs
+        if (tabId === 'projects') {
+            hideProjectDetail();
+        }
+        
+        // Trigger fade-in animations for the active tab content
+        setTimeout(() => {
+            document.querySelectorAll(`#${tabId} .fade-in`).forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 100);
+            });
+        }, 100);
+    });
+});
+
+// ========================================
+// PROJECT DETAIL VIEW NAVIGATION
+// ========================================
+function showProjectDetail(projectId) {
+    // Hide the projects grid
+    const projectsGrid = document.getElementById('projectsGrid');
+    projectsGrid.style.display = 'none';
+    
+    // Show the specific project detail
+    const detailView = document.getElementById(projectId + '-detail');
+    detailView.classList.add('active');
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function hideProjectDetail() {
+    // Hide all detail views
+    document.querySelectorAll('.project-detail-view').forEach(view => {
+        view.classList.remove('active');
+    });
+    
+    // Show the projects grid
+    const projectsGrid = document.getElementById('projectsGrid');
+    if (projectsGrid) {
+        projectsGrid.style.display = 'grid';
+    }
+    
+    // Scroll to portfolio section
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) {
+        portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}

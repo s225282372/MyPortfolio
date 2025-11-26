@@ -137,7 +137,8 @@
             <!-- About Text - Right Side -->
             <div class="about-text fade-in">
                 <p>
-                    👋  Hy there, I'm <strong>Glen Molele</strong>, a final-year Software Engineering student at Nelson Mandela
+                    👋 Hy there, I'm <strong>Glen Molele</strong>, a final-year Software Engineering student at Nelson
+                    Mandela
                     University
                     with a strong foundation in backend and full-stack web development. I specialize in building
                     scalable,
@@ -161,8 +162,534 @@
     </section>
 
 
-    <section id="portfolio" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <h2 style="font-size: 3rem; opacity: 0.3;">Portfolio Section - Coming in Phase 3</h2>
+    <!-- Portfolio Section - PHASE 3 -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Portfolio Showcase</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Explore my journey through projects, certifications, and technical expertise</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="portfolio-tabs fade-in">
+            <button class="tab-btn active" data-tab="projects">
+                <i class="fas fa-code"></i> Projects
+            </button>
+            <button class="tab-btn" data-tab="certificates">
+                <i class="fas fa-certificate"></i> Certificates
+            </button>
+            <button class="tab-btn" data-tab="techstack">
+                <i class="fas fa-layer-group"></i> Tech Stack
+            </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <!-- Projects Tab -->
+            <div class="tab-content active" id="projects">
+                <!-- Projects Grid View -->
+                <div class="projects-grid-view" id="projectsGrid">
+                    <!-- Project 1: Eventify -->
+                    <div class="project-thumbnail-card fade-in">
+                        <div class="project-thumbnail">
+                            <img src="Images/Projects/eventify.png" alt="Eventify Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Eventify</h3>
+                            <p>Event Management & Service Booking Platform</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="project-action-btn live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <button class="project-action-btn details" onclick="showProjectDetail('eventify')">
+                                    Details <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Student Task Management -->
+                    <div class="project-thumbnail-card fade-in">
+                        <div class="project-thumbnail">
+                            <img src="Images/project2.png" alt="Student Task Management System">
+                        </div>
+                        <div class="project-info">
+                            <h3>Student Task Management</h3>
+                            <p>Academic task and module management system</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="project-action-btn live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <button class="project-action-btn details" onclick="showProjectDetail('student-task')">
+                                    Details <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Task Management API -->
+                    <div class="project-thumbnail-card fade-in">
+                        <div class="project-thumbnail">
+                            <img src="Images/project3.png" alt="Task Management Web API">
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management Web API</h3>
+                            <p>Clean architecture ASP.NET Core API</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="project-action-btn live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <button class="project-action-btn details" onclick="showProjectDetail('task-api')">
+                                    Details <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Detail Views -->
+                <!-- Eventify Detail -->
+                <div class="project-detail-view" id="eventify-detail">
+                    <button class="back-btn" onclick="hideProjectDetail()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+
+                    <div class="breadcrumb">Projects > Eventify</div>
+
+                    <div class="project-detail-content">
+                        <div class="project-detail-left">
+                            <h2>Eventify</h2>
+                            <div class="detail-divider"></div>
+                            <p class="project-detail-description">
+                                A comprehensive full-stack event management and service-provider booking system built
+                                with modern technologies.
+                                Features robust backend architecture with Entity Framework Core, secure authentication,
+                                and role-based authorization.
+                            </p>
+
+                            <div class="project-stats">
+                                <div class="stat-box">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <h4>5</h4>
+                                        <p>Total Technology</p>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <i class="fas fa-layer-group"></i>
+                                    <div>
+                                        <h4>6</h4>
+                                        <p>Key Features</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-detail-buttons">
+                                <a href="#" target="_blank" class="detail-btn primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" class="detail-btn secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+
+                            <div class="technologies-section">
+                                <h3><i class="fas fa-code"></i> Technologies Used</h3>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">ASP.NET Core</span>
+                                    <span class="tech-badge">React.js</span>
+                                    <span class="tech-badge">Entity Framework</span>
+                                    <span class="tech-badge">SQL Server</span>
+                                    <span class="tech-badge">JWT Auth</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-detail-right">
+                            <div class="project-showcase">
+                                <img src="Images/Projects/eventify.png" alt="Eventify Showcase">
+                            </div>
+
+                            <div class="key-features-section">
+                                <h3><i class="fas fa-star"></i> Key Features</h3>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check-circle"></i> User authentication with email/password and
+                                        role-based access control</li>
+                                    <li><i class="fas fa-check-circle"></i> Event creation, management, and booking
+                                        system</li>
+                                    <li><i class="fas fa-check-circle"></i> Service provider registration and profile
+                                        management</li>
+                                    <li><i class="fas fa-check-circle"></i> Real-time availability tracking and booking
+                                        confirmations</li>
+                                    <li><i class="fas fa-check-circle"></i> Admin dashboard for system oversight and
+                                        analytics</li>
+                                    <li><i class="fas fa-check-circle"></i> RESTful API with clean architecture
+                                        principles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Task Detail -->
+                <div class="project-detail-view" id="student-task-detail">
+                    <button class="back-btn" onclick="hideProjectDetail()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+
+                    <div class="breadcrumb">Projects > Student Task Management</div>
+
+                    <div class="project-detail-content">
+                        <div class="project-detail-left">
+                            <h2>Student Task Management System</h2>
+                            <div class="detail-divider"></div>
+                            <p class="project-detail-description">
+                                Android application designed to streamline academic task and module management. Features
+                                role-based access
+                                for Admins, Instructors, and Students with comprehensive task tracking and deadline
+                                management.
+                            </p>
+
+                            <div class="project-stats">
+                                <div class="stat-box">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <h4>4</h4>
+                                        <p>Total Technology</p>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <i class="fas fa-layer-group"></i>
+                                    <div>
+                                        <h4>5</h4>
+                                        <p>Key Features</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-detail-buttons">
+                                <a href="#" target="_blank" class="detail-btn primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" class="detail-btn secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+
+                            <div class="technologies-section">
+                                <h3><i class="fas fa-code"></i> Technologies Used</h3>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Android</span>
+                                    <span class="tech-badge">Java</span>
+                                    <span class="tech-badge">SQLite</span>
+                                    <span class="tech-badge">XML</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-detail-right">
+                            <div class="project-showcase">
+                                <img src="Images/project2.png" alt="Student Task Management Showcase">
+                            </div>
+
+                            <div class="key-features-section">
+                                <h3><i class="fas fa-star"></i> Key Features</h3>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check-circle"></i> Multi-role access system for Admin,
+                                        Instructor, and Student users</li>
+                                    <li><i class="fas fa-check-circle"></i> Task creation, assignment, and tracking with
+                                        deadline notifications</li>
+                                    <li><i class="fas fa-check-circle"></i> Module management with course materials and
+                                        resources</li>
+                                    <li><i class="fas fa-check-circle"></i> Student progress tracking and performance
+                                        analytics</li>
+                                    <li><i class="fas fa-check-circle"></i> Offline data persistence with SQLite
+                                        database</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task API Detail -->
+                <div class="project-detail-view" id="task-api-detail">
+                    <button class="back-btn" onclick="hideProjectDetail()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+
+                    <div class="breadcrumb">Projects > Task Management Web API</div>
+
+                    <div class="project-detail-content">
+                        <div class="project-detail-left">
+                            <h2>Task Management Web API</h2>
+                            <div class="detail-divider"></div>
+                            <p class="project-detail-description">
+                                Modern ASP.NET Core Web API demonstrating clean architecture principles with proper
+                                separation of concerns.
+                                Features Infrastructure Layer isolation, Entity Framework Core integration, and
+                                comprehensive API endpoints.
+                            </p>
+
+                            <div class="project-stats">
+                                <div class="stat-box">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <h4>4</h4>
+                                        <p>Total Technology</p>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <i class="fas fa-layer-group"></i>
+                                    <div>
+                                        <h4>5</h4>
+                                        <p>Key Features</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-detail-buttons">
+                                <a href="#" target="_blank" class="detail-btn primary">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" class="detail-btn secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+
+                            <div class="technologies-section">
+                                <h3><i class="fas fa-code"></i> Technologies Used</h3>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">ASP.NET Core</span>
+                                    <span class="tech-badge">Entity Framework</span>
+                                    <span class="tech-badge">SQL Server</span>
+                                    <span class="tech-badge">C#</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-detail-right">
+                            <div class="project-showcase">
+                                <img src="Images/project3.png" alt="Task API Showcase">
+                            </div>
+
+                            <div class="key-features-section">
+                                <h3><i class="fas fa-star"></i> Key Features</h3>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check-circle"></i> Clean architecture with separated
+                                        Infrastructure Layer</li>
+                                    <li><i class="fas fa-check-circle"></i> RESTful API design with proper HTTP methods
+                                        and status codes</li>
+                                    <li><i class="fas fa-check-circle"></i> Entity Framework Core with Code-First
+                                        migrations</li>
+                                    <li><i class="fas fa-check-circle"></i> CRUD operations for task management</li>
+                                    <li><i class="fas fa-check-circle"></i> Dependency injection and repository pattern
+                                        implementation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificates Tab -->
+            <div class="tab-content" id="certificates">
+                <div class="certificates-grid">
+                    <!-- Certificate placeholders - you'll replace with actual images -->
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/generative ai badge.png" alt="AWS Generative AI Certificate"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>AWS Educate Introduction to Generative AI</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/ml foundations badge.png" alt="AWS ML Foundations"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>AWS Educate Machine Learning Foundations</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/devops.png" alt="DevOps on AWS" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Getting Started with DevOps on AWS</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/udacity cert.png" alt="Udacity Generative AI"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Introducing Generative AI with AWS</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/data science hp.png" alt="Data Science & Analytics"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Data Science & Analytics - HP LIFE</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/effective business websites hp.png"
+                            alt="Effective Business Websites" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Effective Business Websites - HP LIFE</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/it for business hp.png" alt="IT for Business Success"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>IT for Business Success - HP LIFE</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/python.png" alt="Certificate 8" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Basics of Python</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/ml foundations cert.png" alt="Certificate 9"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Basics of Machine Learning Algorithms</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/edureka werbinar.png" alt="Certificate 10"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Attendance Certificate</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/werbinar attendance ai.png" alt="Certificate 11"
+                            class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Attendance Certificate</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/cybersecurity.png" alt="Certificate 12" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Introduction To Cybersecurity - Cisco</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/Certificates/IoT.png" alt="Certificate 13" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Introduction to IoT - Cisco</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card fade-in">
+                        <img src="Images/badge3.png" alt="Certificate 14" class="certificate-image">
+                        <div class="certificate-overlay">
+                            <h4>Cloud Practitioner Essentials</h4>
+                            <a href="#" target="_blank" class="cert-link">View Credential</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Tab -->
+            <div class="tab-content" id="techstack">
+                <h3 class="tech-category">Core Technologies</h3>
+                <div class="tech-grid">
+                    <div class="tech-card fade-in">
+                        <i class="devicon-csharp-plain colored"></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-dotnetcore-plain colored"></i>
+                        <span>.NET</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+                <h3 class="tech-category exploring-title">Exploring</h3>
+                <div class="tech-grid exploring-grid">
+                    <div class="tech-card fade-in">
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-kubernetes-plain colored"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                    <div class="tech-card fade-in">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="experience" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
