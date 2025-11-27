@@ -223,3 +223,39 @@ function viewCertifications() {
         }
     }, 800);
 }
+
+// ========================================
+// CONTACT FORM VALIDATION - PHASE 8
+// ========================================
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        // Get form values
+        const name = this.querySelector('[name="name"]').value.trim();
+        const email = this.querySelector('[name="email"]').value.trim();
+        const message = this.querySelector('[name="message"]').value.trim();
+
+        // Basic validation
+        if (name === '' || email === '' || message === '') {
+            e.preventDefault();
+            alert('Please fill in all fields');
+            return false;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            e.preventDefault();
+            alert('Please enter a valid email address');
+            return false;
+        }
+
+        // If validation passes, form will submit to FormSpree
+        // Show success message after a short delay
+        setTimeout(() => {
+            // This will only run after FormSpree redirect
+            alert('Message sent successfully! I\'ll get back to you soon.');
+        }, 500);
+    });
+}

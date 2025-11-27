@@ -841,9 +841,100 @@
     </section>
 
 
-    <section id="contact" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <h2 style="font-size: 3rem; opacity: 0.3;">Contact Section - Coming in Phase 8</h2>
+    <!-- Contact Section - PHASE 8 -->
+    <section id="contact" class="contact-section">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Have something to discuss? Send me a message and let's talk.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST">
+                <div class="form-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-with-icon textarea-group">
+                        <i class="fas fa-comment"></i>
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="send-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+
+            <!-- Social Links Section -->
+            <div class="social-connect-section fade-in">
+                <h3>Connect With Me</h3>
+
+                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank"
+                    class="social-connect-card linkedin">
+                    <div class="social-connect-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-connect-info">
+                        <h4>Let's Connect</h4>
+                        <p>on LinkedIn</p>
+                    </div>
+                    <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+
+                <a href="https://www.instagram.com/realglenh_" target="_blank" class="social-connect-card instagram">
+                    <div class="social-connect-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="social-connect-info">
+                        <h4>Instagram</h4>
+                        <p>@realglenh_</p>
+                    </div>
+                    <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="social-connect-card github">
+                    <div class="social-connect-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="social-connect-info">
+                        <h4>GitHub</h4>
+                        <p>@YourUsername</p>
+                    </div>
+                    <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Glen Molele. Designed with passion for innovation.</p>
+            <p class="footer-sub">Built with modern web technologies and best practices.</p>
+
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Custom JavaScript -->
     <script src="main.js"></script>
