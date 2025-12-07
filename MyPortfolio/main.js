@@ -3,7 +3,7 @@
 // ========================================
 const typingText = document.getElementById('typingText');
 const phrases = [
-    'Building the Future, One Line at a Time',
+    'Web/Backend Developer',
     'Full-Stack Developer',
     'AI & ML Enthusiast',
     'Cloud Computing Explorer'
@@ -144,7 +144,7 @@ window.addEventListener('load', () => {
 });
 
 // ========================================
-// PORTFOLIO TAB SWITCHING - PHASE 3
+// PORTFOLIO TAB SWITCHING 
 // ========================================
 const tabButtons = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
@@ -205,7 +205,7 @@ function hideProjectDetail() {
 }
 
 // ========================================
-// VIEW CERTIFICATIONS FUNCTION - PHASE 7
+// VIEW CERTIFICATIONS FUNCTION 
 // ========================================
 function viewCertifications() {
     // Navigate to portfolio section
@@ -225,7 +225,7 @@ function viewCertifications() {
 }
 
 // ========================================
-// CONTACT FORM VALIDATION - PHASE 8
+// CONTACT FORM VALIDATION 
 // ========================================
 const contactForm = document.getElementById('contactForm');
 
