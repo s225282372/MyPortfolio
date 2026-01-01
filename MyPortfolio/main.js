@@ -3,8 +3,7 @@
 // ========================================
 const typingText = document.getElementById('typingText');
 const phrases = [
-    'Web/Backend Developer',
-    'Full-Stack Developer',
+    'Web / Backend Developer',
     'AI & ML Enthusiast',
     'Cloud Computing Explorer'
 ];
