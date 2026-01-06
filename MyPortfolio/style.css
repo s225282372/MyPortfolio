@@ -1495,6 +1495,44 @@ section {
     font-size: 1rem;
 }
 
+/* View More Section */
+.view-more-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.view-more-section p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.view-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: var(--primary);
+    color: var(--light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
+}
+
 /* ========================================
    RESPONSIVE DESIGN
    ======================================== */
